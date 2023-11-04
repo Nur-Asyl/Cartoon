@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniToon</title>
+    <link rel="icon" type="image/x-icon" href="assets/chibi-logo.png">
+    
+    <!-- bootstrap cdn css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <!-- bootstrap cdn js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <!-- font awesome cdn css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- javascript -->
+    <script defer type="module" src="slider.js"></script>
+    <script defer type="module" src="cartoons.js"></script>
+
+    <!-- css file -->
+    <link rel="stylesheet" href="css/main_page.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+<body class="bg-black">
+
+    <!-- header  -->
+    <nav class="navbar navbar-expand-xl text-white fixed-top position-sticky my-header">
+        <div class="container-fluid justify-content-between">
+
+            <!-- logo  -->
+            <div class="ms-5 d-flex">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/chibi-logo.png" alt="logo" width="70" height="60"> 
+                </a>
+                <a class="text-white fs-3 fw-bolder pt-3 *0.5 ms-2 text-decoration-none" href="#">UniToon.</a>
+            </div>
+            
+            <!-- offcanvas menu -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle Navigation">
+                <i class="fas fa-bars" style="color: brown; font-size: xx-large;"></i>
+            </button>
+            <div class="offcanvas offcanvas-end bg-black" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">UniToon.</h5>
+                    <button type="button" class="btn-close bg-danger" style="font-size: x-large;" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-lg-center justify-content-end flex-grow-1 mx-5 fs-5 fw-medium">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link active text-white" aria-current="page" href="home.html">Home <i class="fa-solid fa-house"></i></a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white" href="#cartoon">Cartoon <i class="fa-brands fa-youtube"></i></a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white" href="#">Popular <i class="fa-solid fa-fire"></i></a>
+                        </li>
+                        <li class="nav-item mx-2">
+                            <a class="nav-link text-white" href="#">Stream <i class="fa-solid fa-eye"></i></a>
+                        </li>
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link dropdown-toggle text-white" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-user"></i>
+                            </a>
+                            <ul class="dropdown-menu bg-black">
+                                <li>
+                                    <a class="dropdown-item my-item text-white" href="profile.html">Profile</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-white" href="#">Notifications</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-white" href="#">Settings</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider bg-white">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-white" href="login.html">Log out</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3 mt-lg-0" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search cart&#127909;n" aria-label="Search">
+                        <button class="btn btn-outline-danger" type="submit"><i class="fas fa-magnifying-glass mx-2"></i></button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </nav>
+
+    <!-- main section -->
+
+    <!-- carousel -->
+    <section class="image-slider">
+        <div class="arrow-left">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+        <div class="arrow-right">
+            <i class="fas fa-arrow-right" width="30px"></i>
+        </div>
+        <div class="description-box">
+            <h1>Adventure time</h1>
+            <p>A twelve-year-old boy and his best friend, <br>
+                a wise twenty-eight-year-old dog with magical powers, <br>
+                go on a series of surreal adventures in a remote future</p>
+            <a href="cartoon.html"><i class="fa-regular fa-circle-play display-4 my-btn-play"></i></a>
+        </div>
+
+    </section>
+
+    <!-- popular cartoons <i class="fa-solid fa-filter"></i> -->
+
+    
+
+
+    <!-- cartoons  -->
+
+    <hr class="my-hr">
+
+    <div class="display-4 text-white text-center" id="cartoon">Cartoons</div>
+
+    <div class="container text-center mt-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col g-3">
+                <img class="img-fluid my-cartoon-container" src="assets/Adventure_time.jpg" alt="">
+                <div class="text-white">
+                    <h4>Adventure Time</h4>
+                    <p>A twelve-year-old boy and his best friend, <br>
+                    a wise twenty-eight-year-old dog with magical powers, <br>
+                    go on a series of surreal adventures in a remote future</p>
+                </div>
+
+                <a href="cartoon.html"><i class="fa-regular fa-circle-play display-4 my-btn-play"></i></a>
+            </div>
+            <div class="col g-3">
+                <img class="img-fluid my-cartoon-container" src="assets/avatar.jpg" alt="">
+                <div class="text-white">
+                    <h4>Adventure Time</h4>
+                    <p>A twelve-year-old boy and his best friend, <br>
+                    a wise twenty-eight-year-old dog with magical powers, <br>
+                    go on a series of surreal adventures in a remote future</p>
+                </div>
+
+                <a href="#"><i class="fa-regular fa-circle-play display-4 my-btn-play"></i></a>
+            </div>
+            <div class="col g-3">
+                <img class="img-fluid my-cartoon-container" src="assets/Gravity-Falls.png" alt="">
+                <div class="text-white">
+                    <h4>Adventure Time</h4>
+                    <p>A twelve-year-old boy and his best friend, <br>
+                    a wise twenty-eight-year-old dog with magical powers, <br>
+                    go on a series of surreal adventures in a remote future</p>
+                </div>
+
+                <a href="#"><i class="fa-regular fa-circle-play display-4 my-btn-play"></i></a>
+            </div>
+            <div class="col g-3">
+                <img class="img-fluid my-cartoon-container" src="assets/Over_The_Garden_Wall.jpg" alt="">
+                <div class="text-white">
+                    <h4>Adventure Time</h4>
+                    <p>A twelve-year-old boy and his best friend, <br>
+                    a wise twenty-eight-year-old dog with magical powers, <br>
+                    go on a series of surreal adventures in a remote future</p>
+                </div>
+
+                <a href="#"><i class="fa-regular fa-circle-play display-4 my-btn-play"></i></a>
+            </div>
+            <div class="col g-3">
+                <img class="img-fluid my-cartoon-container" src="assets/Regular_Show.jpg" alt="">
+                <div class="text-white">
+                    <h4>Adventure Time</h4>
+                    <p>A twelve-year-old boy and his best friend, <br>
+                    a wise twenty-eight-year-old dog with magical powers, <br>
+                    go on a series of surreal adventures in a remote future</p>
+                </div>
+
+                <a href="#"><i class="fa-regular fa-circle-play display-4 my-btn-play"></i></a>
+            </div>
+            <div class="col g-3">
+                <img class="img-fluid my-cartoon-container" src="assets/Adventure_time.jpg" alt="">
+                <div class="text-white">
+                    <h4>Adventure Time</h4>
+                    <p>A twelve-year-old boy and his best friend, <br>
+                    a wise twenty-eight-year-old dog with magical powers, <br>
+                    go on a series of surreal adventures in a remote future</p>
+                </div>
+
+                <a href="#"><i class="fa-regular fa-circle-play display-4 my-btn-play"></i></a>
+            </div>
+            <div class="col g-3">
+                <img class="img-fluid my-cartoon-container" src="assets/avatar.jpg" alt="">
+                <div class="text-white">
+                    <h4>Adventure Time</h4>
+                    <p>A twelve-year-old boy and his best friend, <br>
+                    a wise twenty-eight-year-old dog with magical powers, <br>
+                    go on a series of surreal adventures in a remote future</p>
+                </div>
+
+                <a href="#"><i class="fa-regular fa-circle-play display-4 my-btn-play"></i></a>
+            </div>
+            <div class="col g-3">
+                <img class="img-fluid my-cartoon-container" src="assets/Gravity-Falls.png" alt="">
+                <div class="text-white">
+                    <h4>Adventure Time</h4>
+                    <p>A twelve-year-old boy and his best friend, <br>
+                    a wise twenty-eight-year-old dog with magical powers, <br>
+                    go on a series of surreal adventures in a remote future</p>
+                </div>
+
+                <a href="#"><i class="fa-regular fa-circle-play display-4 my-btn-play"></i></a>
+            </div>
+            <div class="col g-3">
+                <img class="img-fluid my-cartoon-container" src="assets/Over_The_Garden_Wall.jpg" alt="">
+                <div class="text-white">
+                    <h4>Adventure Time</h4>
+                    <p>A twelve-year-old boy and his best friend, <br>
+                    a wise twenty-eight-year-old dog with magical powers, <br>
+                    go on a series of surreal adventures in a remote future</p>
+                </div>
+
+                <a href="#"><i class="fa-regular fa-circle-play display-4 my-btn-play"></i></a>
+            </div>
+            <div class="col g-3">
+                <img class="img-fluid my-cartoon-container" src="assets/Regular_Show.jpg" alt="">
+                <div class="text-white">
+                    <h4>Adventure Time</h4>
+                    <p>A twelve-year-old boy and his best friend, <br>
+                    a wise twenty-eight-year-old dog with magical powers, <br>
+                    go on a series of surreal adventures in a remote future</p>
+                </div>
+
+                <a href="#"><i class="fa-regular fa-circle-play display-4 my-btn-play"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center mt-5">
+        <div id="cartoons-list" class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <hr class="my-hr">
+    <footer class="d-flex text-white  justify-content-between mx-5">
+        <a class="text-decoration-none text-white" href="#"><img class="me-2 mb-1" src="assets/chibi-logo.png" width="40" height="30" alt="logo-img">UniToon.</a>
+        <blockquote class="">&#169; Unitoon. Watch Cartoons.</blockquote>
+    </footer>
+
+    <!-- header section -->
+    <!-- <header>
+        <a href="#" class="logo"><img class="logo-img" src="assets/chibi-logo.png" alt="logo-img"> UniToon.</a>
+        <nav class="navbar">
+            <a class="active" href="#home">home</a>
+            <a href="#cartoon">cartoon</a>
+            <a href="#action">popular</a>
+            <a href="#stream">stream</a>
+            <a href="login.html">login</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart" alt="heart-icon"></a>
+        </div>
+    </header> -->
+
+    <!-- home section -->
+
+    <!-- <section class="home" id="home">
+        <div class="swiper home-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box " style="background: url(assets/Adventure_time.jpg) no-repeat;">
+                        <div class="content">
+                            <h3>Adventure Time</h3>
+                            <p>A twelve-year-old boy and his best friend, <br>
+                                a wise twenty-eight-year-old dog with magical powers, <br>
+                                go on a series of surreal adventures in a remote future.</p>
+                                <a href="#" class="btn">&#9654</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box second" style="background: url(assets/Regular_Show.jpg) no-repeat;">
+                        <div class="content">
+                            <h3>Regular Show</h3>
+                            <p>The surreal misadventures of two <br>
+                                best friends - a blue jay and a raccoon - as they seek <br>
+                                to liven up their mundane jobs as groundskeepers at the local park. </p>
+                                <a href="#" class="btn">&#9654</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(assets/Over_The_Garden_Wall.jpg) no-repeat;">
+                        <div class="content">
+                            <h3>Over the Garden Wall</h3>
+                            <p>Two brothers find themselves lost in a mysterious <br>
+                                land and try to find their way home.</p>
+                                <a href="#" class="btn">&#9654</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(assets/avatar.jpg) no-repeat;">
+                        <div class="content">
+                            <h3>Gravity Falls</h3>
+                            <p>In a war-torn world of elemental magic, <br>
+                                a young boy reawakens to undertake a dangerous mystic quest <br>
+                                to fulfill his destiny as the Avatar, <br>
+                                and bring peace to the world.</p>
+                                <a href="#" class="btn">&#9654</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(assets/Gravity-Falls.png) no-repeat;">
+                        <div class="content">
+                            <h3>Gravity Falls</h3>
+                            <p>Twin siblings Dipper and Mabel Pines <br>
+                                spend the summer at their great-uncle's tourist <br>
+                                trap in the enigmatic Gravity Falls, Oregon.</p>
+                                <a href="#" class="btn">&#9654</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section> -->
+
+    <!-- cartoon section -->
+    <!-- <section class="cartoon" id="cartoon">
+        <hr>
+        <h1 class="heading">Cartoons</h1>
+
+        <div class="swiper cartoon-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(assets/Adventure_time.jpg) no-repeat; background-size: cover;"></div>
+                    <div class="content">
+                        <h3>Adventure Time</h3>
+                        <p>A twelve-year-old boy and his best friend, <br>
+                            a wise twenty-eight-year-old dog with magical powers, <br>
+                            go on a series of surreal adventures in a remote future.</p>
+                        <a href="#" class="btn">&#9654</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box second" style="background: url(assets/Regular_Show.jpg) no-repeat; background-size: cover;"></div>
+                    <div class="content">
+                        <h3>Regular Show</h3>
+                        <p>The surreal misadventures of two <br>
+                            best friends - a blue jay and a raccoon - as they seek <br>
+                            to liven up their mundane jobs as groundskeepers at the local park. </p>
+                            <a href="#" class="btn">&#9654</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(assets/Over_The_Garden_Wall.jpg) no-repeat; background-size: cover;"> </div>
+                    <div class="content">
+                        <h3>Over the Garden Wall</h3>
+                        <p>Two brothers find themselves lost in a mysterious <br>
+                            land and try to find their way home.</p>
+                            <a href="#" class="btn">&#9654</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(assets/avatar.jpg) no-repeat; background-size: cover;"></div>
+                    <div class="content">
+                        <h3>Gravity Falls</h3>
+                        <p>In a war-torn world of elemental magic, <br>
+                            a young boy reawakens to undertake a dangerous mystic quest <br>
+                            to fulfill his destiny as the Avatar, <br>
+                            and bring peace to the world.</p>
+                            <a href="#" class="btn">&#9654</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(assets/Gravity-Falls.png) no-repeat; background-size: cover;"></div>
+                    <div class="content">
+                        <h3>Gravity Falls</h3>
+                        <p>Twin siblings Dipper and Mabel Pines <br>
+                            spend the summer at their great-uncle's tourist <br>
+                            trap in the enigmatic Gravity Falls, Oregon.</p>
+                            <a href="#" class="btn">&#9654</a>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </section> -->
+
+    <!-- action section -->
+
+    <!-- <section class="action" id="action">
+        <hr>
+        <h1 class="heading">Popular</h1>
+
+        <div class="swiper action-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(assets/Adventure_time.jpg) no-repeat; background-size: cover;"></div>
+                    <div class="content">
+                        <h3>Adventure Time</h3>
+                        <p>A twelve-year-old boy and his best friend, <br>
+                            a wise twenty-eight-year-old dog with magical powers, <br>
+                            go on a series of surreal adventures in a remote future.</p>
+                        <a href="#" class="btn">&#9654</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box second" style="background: url(assets/Regular_Show.jpg) no-repeat; background-size: cover;"></div>
+                    <div class="content">
+                        <h3>Regular Show</h3>
+                        <p>The surreal misadventures of two <br>
+                            best friends - a blue jay and a raccoon - as they seek <br>
+                            to liven up their mundane jobs as groundskeepers at the local park. </p>
+                            <a href="#" class="btn">&#9654</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(assets/Over_The_Garden_Wall.jpg) no-repeat; background-size: cover;"> </div>
+                    <div class="content">
+                        <h3>Over the Garden Wall</h3>
+                        <p>Two brothers find themselves lost in a mysterious <br>
+                            land and try to find their way home.</p>
+                            <a href="#" class="btn">&#9654</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(assets/avatar.jpg) no-repeat; background-size: cover;"></div>
+                    <div class="content">
+                        <h3>Gravity Falls</h3>
+                        <p>In a war-torn world of elemental magic, <br>
+                            a young boy reawakens to undertake a dangerous mystic quest <br>
+                            to fulfill his destiny as the Avatar, <br>
+                            and bring peace to the world.</p>
+                            <a href="#" class="btn">&#9654</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box" style="background: url(assets/Gravity-Falls.png) no-repeat; background-size: cover;"></div>
+                    <div class="content">
+                        <h3>Gravity Falls</h3>
+                        <p>Twin siblings Dipper and Mabel Pines <br>
+                            spend the summer at their great-uncle's tourist <br>
+                            trap in the enigmatic Gravity Falls, Oregon.</p>
+                            <a href="#" class="btn">&#9654</a>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+
+    <!-- footer section -->
+
+    <!-- <hr>
+    <footer>
+        <a href="#" class="logo"><img class="logo-img" src="assets/chibi-logo.png" alt="logo-img">UniToon.</a>
+        <blockquote>&#169; Unitoon. Watch Cartoons.</blockquote>
+    </footer> -->
+
+    
+    <!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js" defer data-defered="1"></script>
+    <script src="main.js" defer data-defered="1"></script> -->
+
+</body>
+</html>

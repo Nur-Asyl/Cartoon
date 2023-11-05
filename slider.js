@@ -7,6 +7,25 @@ const heading = document.querySelector(".description-box h1");
 const description = document.querySelector(".description-box p");
 
 let id = 0;
+let transitionDelay = 4000;
+let intervalId = 0;
+
+slide(0);
+
+document.addEventListener("DOMContentLoaded", function() {
+    intervalId = setInterval(() => next(), transitionDelay);
+    arrLeft.addEventListener('click', () => {
+        clearInterval(intervalId);
+        prev();
+        intervalId = setInterval(() => next(), transitionDelay);
+    })
+    
+    arrRight.addEventListener('click', () => {
+        clearInterval(intervalId);
+        next();
+        intervalId = setInterval(() => next(), transitionDelay);
+    })
+});
 
 function slide(id) {
     slider.style.backgroundImage = `url(../assets/${cartoons[id].image})`;
@@ -14,7 +33,7 @@ function slide(id) {
     slider.classList.add('image-fade');
 
     setTimeout(() => {
-        slide.classList.remove('image-fade');
+        slider.classList.remove('image-fade');
     }, 550);
 
     heading.innerText = cartoons[id].heading;
@@ -23,23 +42,25 @@ function slide(id) {
 
 }
 
-arrLeft.addEventListener('click', () => {
-    id--;
-
-    if (id<0) {
-        id = cartoons.length - 1;
-    }
-
-    slide(id);
-})
-
-arrRight.addEventListener('click', () => {
+function next() {
     id++;
-
+    
     if (id > cartoons.length - 1) {
         id = 0;
     }
 
     slide(id);
-})
+}
+
+function prev() {
+    id--;
+    
+    if (id<0) {
+        id = cartoons.length - 1;
+    }
+
+    slide(id);
+}
+
+
 

@@ -6,6 +6,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const errorPassword = document.getElementById("errorPassword");
     const usernameInput = form.elements["name"];
     const passwordInput = form.elements["password"];
+    const phoneInput = form.elements["phone"];
+    const phoneMask = IMask(
+        phoneInput, {
+            mask: '+{7}(000)000-00-00'
+        }
+    );
     let nameValid = false;
     let passwordValid = false;
     let errorPasswordArr = [];
@@ -54,6 +60,10 @@ document.addEventListener("DOMContentLoaded", function() {
             errorPassword.innerText = errorPasswordArr.join("\n");
         }
         passwordValid = true;
+    });
+
+    phoneInput.addEventListener("input", function() {
+        
     });
 
     form.addEventListener('submit', (event) => {

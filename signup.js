@@ -75,7 +75,9 @@ document.addEventListener("DOMContentLoaded", function() {
             const user = {
                 username: usernameInput.value,
                 password: passwordInput.value,
-                isUserRegistered: false
+                isUserRegistered: false,
+                watchedTitles: 0,
+                likedTitles: []
               };
         
               localStorage.setItem("user", JSON.stringify(user));

@@ -55,7 +55,6 @@ header {
     align-items: center;
     justify-content: space-between;
     box-shadow: var(--box-shadow);
-    z-index: 10000;
 }
 
 header:hover{

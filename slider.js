@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function slide(id) {
-    slider.style.backgroundImage = `url(assets/${cartoons[id].image})`;
+    slider.style.backgroundImage = `url(${cartoons[id].image})`;
 
     slider.classList.add('image-fade');
 

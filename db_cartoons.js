@@ -1,5 +1,5 @@
 const isGitHubPages = window.location.hostname === "nur-asyl.github.io";
-const imagePathPrefix = isGitHubPages ? "your-repository-name/" : "";
+const imagePathPrefix = isGitHubPages ? "Cartoon/" : "";
 
 const cartoons = [
     {

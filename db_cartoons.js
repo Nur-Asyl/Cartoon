@@ -1,5 +1,7 @@
-const isGitHubPages = window.location.hostname === "nur-asyl.github.io";
-const imagePathPrefix = isGitHubPages ? "Cartoon/" : "";
+// const isGitHubPages = window.location.hostname === "nur-asyl.github.io";
+// const imagePathPrefix = isGitHubPages ? "Cartoon/" : "";
+
+const imagePathPrefix = "";
 
 const cartoons = [
     {

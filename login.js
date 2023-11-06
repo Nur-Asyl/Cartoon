@@ -7,9 +7,16 @@ const usernameInput = form.elements["name"];
 const passwordInput = form.elements["password"];
 const loginContent = document.getElementById("login-content");
 const profileContent = document.getElementById("profile-content");
+const modalBackdrop = document.querySelector(".modal-backdrop");
+
+if (modalBackdrop) {
+    modalBackdrop.style.zIndex = -1;
+}
 
 const storedUser = JSON.parse(localStorage.getItem("user"));
-let isUserRegistered = storedUser.isUserRegistered;
+
+
+let isUserRegistered = (storedUser === null) ? false : storedUser.isUserRegistered; 
 
 
 function showLoginContent() {
